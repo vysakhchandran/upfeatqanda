@@ -97,7 +97,7 @@ Best practices
    with deployments, ingresses, configmaps, etc, or terraform config files, templates, etc). Be sure to include how you
    would manage secrets and values as well as any setup instructions and notes.
 
-Laravel k8 helm deployment are well described in [here](https://www.digitalocean.com/community/tutorials/how-to-deploy-laravel-7-and-mysql-on-kubernetes-using-helm)  Apologies for taking the shortcut. 
+Laravel k8 helm deployment are well described in [here](https://www.digitalocean.com/community/tutorials/how-to-deploy-laravel-7-and-mysql-on-kubernetes-using-helm)  Apologies for taking the shortcut. [Here is a flaskapi test deployment in k8 i have created a month back](https://github.com/vysakhchandran/deptominikube) for another interview(unfortunately i had to turndown the offer )
 
 
 3. Suppose we wanted to deploy this onto a cloud provider instead. Using the provider of your choice (AWS, GCP, etc),
@@ -106,4 +106,5 @@ Laravel k8 helm deployment are well described in [here](https://www.digitalocean
    configure.
 If we are deploying this on a cloud. I would take advantage of the eco system. Which means i would be able to seamlessly setup CI automations. right form the code repository, i'll be adapting cloud native tools. Like in aws codecommit for code repo,codebuild for build and testing, codedeployment for automated deployments, also use the container registry and secret management tools. Specifically for this workload, i would make use of EKS on fargate ( no tension ) 
 
-However if we want to enjoy most of this benefits on prem, i would probably think of setting up an Openshift and deploy the laravel/or any apps on top of it. 
+However if we want to enjoy most of this benefits on prem, i would probably think of setting up Openshift and deploy the laravel/or any apps on top of it. 
+
