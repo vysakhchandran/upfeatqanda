@@ -12,7 +12,7 @@
 
 Answer
 ----------
-The highlevel steps for the installation is pretty straight forward and here is the fully working git repo of an automated ansible K8 cluster deployment ( as this contains all working code am not cherry-picking and snipping it in here ) Installing the control-plane on bare metal manually and managing it is a time intensive task when compare with other solutions (AWS EKS cluster takes around 10-20 min to spinup). There might be problems with repos/libraries being obsolete that need to be handled on the fly. However in overall this method will do the magic. 
+The highlevel steps for the installation is pretty straight forward and [here is the fully working git repo](https://github.com/buildvirtual-git/kubernetes/tree/main/ansible-deploy-k8s) of an automated ansible K8 cluster deployment ( as this contains all working code am not cherry-picking and snipping it in here ) Installing the control-plane on bare metal manually and managing it is a time intensive task when compare with other solutions (AWS EKS cluster takes around 10-20 min to spinup). There might be problems with repos/libraries being obsolete that need to be handled on the fly. However in overall this method will do the magic. 
 
 As our CM tool in choice is ansible.we can make use of privileged escalation to run a CM script as root on the target server. 
 ```
